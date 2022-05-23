@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Card, Col, Container, Form, FormControl, InputGroup, Navbar, Row, Table } from 'react-bootstrap';
 import Pagination from 'react-js-pagination';
+import '../src/app.css'
 
 class App extends Component{
     constructor(props){
@@ -16,7 +17,6 @@ class App extends Component{
             isDataFetched:false,
             search:'',
             isSearchBtnClicked:false,
-            totalItemsCount:0
         }
 
         this.handlePageChange = this.handlePageChange.bind(this);
@@ -203,7 +203,7 @@ class App extends Component{
     }
 
     render(){
-        const{data,isloaded,isDataFetched,error,activePage,itemsCountPerPage,totalItemsCount} = this.state;
+        const{data,isloaded,isDataFetched,activePage,itemsCountPerPage} = this.state;
         let items = data.slice((activePage - 1) * itemsCountPerPage, activePage * itemsCountPerPage);
         return(
             <>
