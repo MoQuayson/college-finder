@@ -117,7 +117,7 @@ class App extends Component{
                         <tr key={index}>
                             <td hidden>{index+1}</td>
                             <td className='fw-bold'>{item.name}</td>
-                            <td><a target='_blank' href={item.web_pages}>{item.web_pages}</a></td>
+                            <td><a target='_blank' rel="noreferrer" href={item.web_pages}>{item.web_pages}</a></td>
                             <td>{item.domains}</td>
                             <td>{item.country}</td>
                         </tr>
@@ -179,7 +179,6 @@ class App extends Component{
                     isloaded: true,
                     data: response,
                     pageRangeDisplayed:5,
-                    totalItemsCount:response.length,
                     isSearchBtnClicked:false,
                     totalItemsCount:response.length
                 });
