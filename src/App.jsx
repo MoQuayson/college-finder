@@ -62,8 +62,8 @@ class App extends Component{
                     <Col>
                         <Form onSubmit={this.FormSubmit.bind(this)}>
                             <InputGroup className='shadow-sm'>
-                                <FormControl type='text' size='lg' placeholder='Searchs by country' onInput={(e)=>this.setState({search:e.target.value})}/>
-                                <Button variant="success" id="searchbtn" size='lg' onClick={alert('s')}>
+                                <FormControl type='text' size='lg' placeholder='Search by country' onInput={(e)=>this.setState({search:e.target.value})}/>
+                                <Button variant="success" id="searchbtn" size='lg' onClick={()=>this.handleSearchBtnClick.bind(this)}>
                                 <i className="bi bi-search me-2"></i>Search</Button>
                             </InputGroup>
                         </Form>
