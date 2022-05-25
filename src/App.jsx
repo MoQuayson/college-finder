@@ -61,13 +61,11 @@ class App extends Component{
                 <p className='app-desc text-black-50'>An online university search engine</p>
                 <Row>
                     <Col>
-                        <Form onSubmit={this.FormSubmit.bind(this)}>
-                            <InputGroup className='shadow-sm'>
+                    <InputGroup className='shadow-sm'>
                                 <FormControl type='text' size='lg' placeholder='Search by country' onInput={(e)=>this.setState({search:e.target.value})}/>
                                 <Button variant="success" id="searchbtn" size='lg' onClick={this.handleSearchBtnClick}>
                                 <i className="bi bi-search me-2"></i>Search</Button>
                             </InputGroup>
-                        </Form>
                     </Col>
                 </Row>
             </div>
