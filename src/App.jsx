@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Card, Col, Container, FormControl, InputGroup, Navbar, Row, Table } from 'react-bootstrap';
+import { Button, Card, Col, Container, Form, FormControl, InputGroup, Navbar, Row, Table } from 'react-bootstrap';
 import Pagination from 'react-js-pagination';
 //import './../src/app.css';
 
@@ -61,11 +61,13 @@ class App extends Component{
                 <p className='app-desc text-black-50'>An online university search engine</p>
                 <Row>
                     <Col>
-                    <InputGroup className='shadow-sm'>
+                        <Form onSubmit={this.FormSubmit.bind(this)}>
+                            <InputGroup className='shadow-sm'>
                                 <FormControl type='text' size='lg' placeholder='Search by country' onInput={(e)=>this.setState({search:e.target.value})}/>
                                 <Button variant="success" id="searchbtn" size='lg' onClick={this.handleSearchBtnClick}>
                                 <i className="bi bi-search me-2"></i>Search</Button>
                             </InputGroup>
+                        </Form>
                     </Col>
                 </Row>
             </div>
@@ -153,7 +155,7 @@ class App extends Component{
                             activePage={this.state.activePage}
                             itemsCountPerPage={this.state.itemsCountPerPage}
                             totalItemsCount={this.state.totalItemsCount}
-                            pageRangeDisplayed={5}
+                            pageRangeDisplayed={10}
                             onChange={this.handlePageChange}
                             itemClass='page-item'
                             linkClass='page-link'
@@ -169,7 +171,8 @@ class App extends Component{
     }
 
     handleUniDataFetch(){
-        var url = 'http://universities.hipolabs.com/search?country='+ this.state.search;
+        alert('sss');
+        /*var url = 'http://universities.hipolabs.com/search?country='+ this.state.search;
         fetch(url)
         .then(res=>res.json())
         .then(
@@ -188,9 +191,9 @@ class App extends Component{
                     error:error
                 });
 
-                //console.log(this.state.error);
+                console.log(this.state.error);
             }
-        )
+        )*/
 
     }
 

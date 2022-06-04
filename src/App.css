@@ -1,9 +1,3 @@
-/*Container {
-    min-height: 10em;
-    display: table-cell;
-    vertical-align: middle;
-}*/
-
 * {
     font-family: 'Times New Roman', Times, serif;
 }
@@ -59,9 +53,4 @@ td {
 .card-header {
     background-color: #146EB4 !important;
     color: white;
-}
-
-#app-card .active {
-    animation: backInUp;
-    animation-duration: 2s;
 }
