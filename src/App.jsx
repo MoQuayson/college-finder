@@ -61,10 +61,10 @@ class App extends Component{
                 <p className='app-desc text-black-50'>An online university search engine</p>
                 <Row>
                     <Col>
-                        <Form >
+                        <Form onSubmit={this.FormSubmit.bind(this)}>
                             <InputGroup className='shadow-sm'>
                                 <FormControl type='text' size='lg' placeholder='Search by country' onInput={(e)=>this.setState({search:e.target.value})}/>
-                                <Button variant="success" id="searchbtn" size='lg' onClick={this.handleSearchBtnClick}>
+                                <Button variant="success" id="searchbtn" size='lg'>
                                 <i className="bi bi-search me-2"></i>Search</Button>
                             </InputGroup>
                         </Form>
@@ -171,8 +171,7 @@ class App extends Component{
     }
 
     handleUniDataFetch(){
-        alert('sss');
-        /*var url = 'http://universities.hipolabs.com/search?country='+ this.state.search;
+        var url = 'http://universities.hipolabs.com/search?country='+ this.state.search;
         fetch(url)
         .then(res=>res.json())
         .then(
@@ -193,7 +192,7 @@ class App extends Component{
 
                 console.log(this.state.error);
             }
-        )*/
+        )
 
     }
 
