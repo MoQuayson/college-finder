@@ -35,14 +35,14 @@ class App extends Component{
 
     handleSearchBtnClick(){
         //document.getElementById('app-card').classList.add('active');
-       /* this.setState({
+       this.setState({
             isSearchBtnClicked:true,
             isloaded:false,
             isDataFetched:true,
             totalItemsCount:0,
-        })*/
+        })
 
-        alert('hello')
+        //alert('hello')
     }
 
     //NavBar Header
@@ -198,11 +198,11 @@ class App extends Component{
 
     }
 
-    componentDidUpdate(){
+    /*componentDidUpdate(){
         if(this.state.isSearchBtnClicked){
             this.handleUniDataFetch();
         }
-    }
+    }*/
 
     render(){
         const{data,isloaded,isDataFetched,activePage,itemsCountPerPage} = this.state;
