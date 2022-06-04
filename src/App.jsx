@@ -58,7 +58,7 @@ class App extends Component{
         return(
             <div id='app-search-panel' className="d-block w-100 text-center mb-3">
                 <h4 className='app-title'>UniSearch</h4>
-                <p className='app-desc text-black-50'>An online university search engine</p>
+                <p className='app-desc text-black-50'>An online university1 search engine</p>
                 <Row>
                     <Col>
                         <Form onSubmit={this.FormSubmit.bind(this)}>
