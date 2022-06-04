@@ -36,9 +36,9 @@ class App extends Component{
     handleSearchBtnClick(){
         //document.getElementById('app-card').classList.add('active');
         this.setState({
-            /*isSearchBtnClicked:true,
-            isloaded:false,
-            isDataFetched:true,*/
+            isSearchBtnClicked:true,
+            //isloaded:false,
+            //isDataFetched:true,
             totalItemsCount:0,
         })
 
