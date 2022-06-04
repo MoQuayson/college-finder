@@ -35,12 +35,14 @@ class App extends Component{
 
     handleSearchBtnClick(){
         //document.getElementById('app-card').classList.add('active');
-        this.setState({
+       /* this.setState({
             isSearchBtnClicked:true,
             isloaded:false,
             isDataFetched:true,
             totalItemsCount:0,
-        })
+        })*/
+
+        alert('hello')
     }
 
     //NavBar Header
@@ -58,13 +60,13 @@ class App extends Component{
         return(
             <div id='app-search-panel' className="d-block w-100 text-center mb-3">
                 <h4 className='app-title'>UniSearch</h4>
-                <p className='app-desc text-black-50'>An online university1 search engine</p>
+                <p className='app-desc text-black-50'>An online university search engine</p>
                 <Row>
                     <Col>
                         <Form onSubmit={this.FormSubmit.bind(this)}>
                             <InputGroup className='shadow-sm'>
                                 <FormControl type='text' size='lg' placeholder='Search by country' onInput={(e)=>this.setState({search:e.target.value})}/>
-                                <Button variant="success" id="searchbtn" size='lg'>
+                                <Button variant="success" id="searchbtn" size='lg' onClick={this.handleSearchBtnClick}>
                                 <i className="bi bi-search me-2"></i>Search</Button>
                             </InputGroup>
                         </Form>
