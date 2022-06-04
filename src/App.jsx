@@ -198,11 +198,11 @@ class App extends Component{
 
     }
 
-    /*componentDidUpdate(){
+    componentDidUpdate(){
         if(this.state.isSearchBtnClicked){
             this.handleUniDataFetch();
         }
-    }*/
+    }
 
     render(){
         const{data,isloaded,isDataFetched,activePage,itemsCountPerPage} = this.state;
