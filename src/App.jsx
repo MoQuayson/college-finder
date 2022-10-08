@@ -3,6 +3,7 @@ import AppFooter from './components/AppFooter';
 import AppHeader from './components/AppHeader';
 import FinderAppSection from './components/FinderAppSection';
 import HeroSection from './components/HeroSection';
+import { ScrollTop } from 'primereact/scrolltop';
 
 export default function App(){
 
@@ -10,6 +11,7 @@ export default function App(){
         <>
         <AppHeader/>
         <HeroSection/>
+        <ScrollTop threshold={200} />
         <FinderAppSection/>
         <AppFooter/>
         </>

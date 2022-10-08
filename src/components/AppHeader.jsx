@@ -22,10 +22,6 @@ const appNavBar = ()=>{
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href='#heroSection'>Home</a>
-                        </li>
-                        
-                        <li className="nav-item">
                             <a className="nav-link" href={appGitHubLink}>
                                 <i className="bi bi-github"></i>
                             </a>

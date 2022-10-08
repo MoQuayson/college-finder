@@ -33,7 +33,7 @@ html {
 /*Hero Section*/
 
 #heroSection {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -62,8 +62,6 @@ html {
 .search-panel .input-group>* {
     border-radius: 50px !important;
 }
-
-.search-panel .input-group input {}
 
 .search-panel .input-group button {
     position: absolute;
