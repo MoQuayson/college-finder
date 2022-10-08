@@ -1,56 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 * {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Nunito', sans-serif;
 }
 
-.app-title,
-table,
-* {
-    user-select: none;
-    /* supported by Chrome and Opera */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
+body,
+html {
+    height: 100%;
 }
 
-#main {
-    padding: 50px;
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/*NavBar header*/
+
+#nav {
+    min-height: 70px;
+    font-weight: lighter;
 }
 
-#app-search-panel {
-    line-height: 5px;
-}
-
-#app-navbar {
-    height: 60px;
-    font-weight: bold;
-    color: #146EB4 !important;
-}
-
-.app-title {
-    font-size: 3.3em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: italic;
-}
-
-.app-desc {
-    font-size: 1.2em;
-    font-style: italic;
-}
-
-td {
+.nav-brand {
     font-size: 1.1em;
 }
 
-.card-header {
-    background-color: #146EB4 !important;
+#nav .nav-link {
+    font-size: 1.2em;
+}
+
+.section {
+    height: 100vh;
+    margin-bottom: 20px;
+}
+
+
+/*Hero Section*/
+
+#heroSection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
+    background-position: center;
+}
+
+
+/* Place text in the middle of the image */
+
+.hero-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-subtitle {
+    font-size: 1.1em;
+    font-style: italic;
+    color: rgb(234, 228, 228);
+}
+
+
+/*app section*/
+
+.search-panel .input-group>* {
+    border-radius: 50px !important;
+}
+
+.search-panel .input-group input {}
+
+.search-panel .input-group button {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    z-index: 5;
+    display: block;
+}
+
+
+/*Footer*/
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+    /* Vertically center the text there */
+    background: white;
+}
+
+.socials a {
+    margin-right: 5px;
 }
