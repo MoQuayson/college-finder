@@ -1,7 +1,3 @@
-
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
-
 # About Office Finder
 
 A web app for finding colleges and their information in a country using React and Restful API 
@@ -41,6 +37,7 @@ Open http://localhost:3000 to view it in your browser.
 
 
 ### Acknowledgements
+
  - A big thank you to [Hipo](https://github.com/Hipo) for the university data api.
 
  - For the University Domains and Names Data List & API, click [here](https://github.com/Hipo/university-domains-list)
@@ -49,6 +46,4 @@ Open http://localhost:3000 to view it in your browser.
 
 ### Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](/public/images/screen-capture.png)
