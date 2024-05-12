@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
@@ -14,16 +13,20 @@ export default function FinderAppSection(){
         setLoading(true);
 
         //url
-        var url = 'http://universities.hipolabs.com/search?country='+ country;
+        //var url = 'http://universities.hipolabs.com/search?country='+ country;
+        var url = 'https://college-explorer-api.onrender.com/api/search?country='+ country;
         
         //get response and data
-        const response = await fetch(url);
-        const collegeData = await response.json(response);
+        const getDataResp = await fetch(url);
+        let jsonData = await getDataResp.json()
+        const collegeData = jsonData.data
+        console.log("collegeData: ",collegeData)
 
         setData(collegeData);
         setCountry('')
         setFocus(false);
         setLoading(false);
+
     }
 
     //when search value is changed

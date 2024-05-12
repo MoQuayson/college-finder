@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import './index.css';
 import './main.css';
 import App from './App';
@@ -11,10 +11,14 @@ import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
 import "primereact/resources/primereact.min.css"; //core css
 import "primeicons/primeicons.css"; //icons
 
-ReactDOM.render( <
-    App / > ,
-    document.getElementById('root')
-);
+
+ReactDOM.render(
+    <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+ document.getElementById('root')
+)
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

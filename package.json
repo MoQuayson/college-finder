@@ -16,14 +16,13 @@
         "react-dom": "^17.0.2",
         "react-js-pagination": "^3.0.3",
         "react-paginate": "^8.1.2",
-        "react-scripts": "5.0.0",
+        "vite-tsconfig-paths": "^4.2.1",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "start": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
     },
     "eslintConfig": {
         "extends": [
@@ -45,7 +44,11 @@
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
+        "@vitejs/plugin-react": "^4.1.0",
+        "@vitejs/plugin-react-swc": "^3.4.0",
         "bootstrap": "^5.2.2",
-        "bootstrap-icons": "^1.9.1"
+        "bootstrap-icons": "^1.9.1",
+        "vite": "^4.5.0",
+        "vite-plugin-svgr": "^4.1.0"
     }
 }
