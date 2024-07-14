@@ -29,6 +29,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+      
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
@@ -44,7 +50,7 @@ jobs:
       - name: Build & push
         uses: docker/build-push-action@v5
         with:
-          context: backend
+          context: .
           file: devops/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPOSITORY }}:latest
